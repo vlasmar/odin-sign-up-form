@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "myFont";
+  src: url("./Norsebold.otf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    min-height: 100vh;
+}
+
+#left {
+    width: 40%;
+    background-image: url(./background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 100%;
+    font-family: "myFont", sans-serif;
+    font-size: 5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 200px;
+}
+
+.credit {
+    color: white;
+}
+
+.credit > a {
+    color: white;
+}
+
+#right {
+    background-color: rgb(247, 247, 247);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 20px 50px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.form-row div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+input {
+  width: 70%;
+  padding: 8px;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3B82F6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+.form-button {
+    margin: 30px 40px;
+}
+
+.submit-btn {
+    background-color: #596D48;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-button > p {
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.form-button > p > a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
